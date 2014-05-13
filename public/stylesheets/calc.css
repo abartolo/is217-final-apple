@@ -1,0 +1,24 @@
+
+
+
+#error {
+	color: red;
+	font: 14px;
+	font-weight: bold;
+}
+
+div,h1,h2,h3,h4 {
+	margin: 15px 0px;	
+
+}
+label{
+	font-weight: bold;
+}
+
+input {
+	margin-bottom: 10px;
+}
+
+
+
+
