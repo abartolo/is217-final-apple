@@ -93,13 +93,14 @@ var ModLaptop = function(curobj){
 	}
 	
 }
-
+/* HERE I ALSO CREATED A FASCADE TO MAKE IT EASIER AND MORE USERFIRENDLY TO CHANGE THE INNERHTML OF ANY ID */
 /* Fascade */
 function setObjValue(id,value){
 	var objele = document.getElementById(id);
 	objele.innerHTML = value;
 }
 
+/* HERE I USED A SINGLETON PATTERN WHEN CREATING AN XMLHTTP OBJECT. THIS IS DONE TO NOT CREATE MULTIPLE AJAX OBJECTS */
 /* Singleton */
 //Create HTTP Object - Singleton
 var HTTPObj = function (){
