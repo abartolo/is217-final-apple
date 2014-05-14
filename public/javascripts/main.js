@@ -10,7 +10,7 @@ var Laptop = function(makeval){
 	this.price = 0;
 	
 }
-
+/* THE FOLLOWING IS A DECORATOR PATTERN. AFTER CREATING THE LAPTOP OBJECT, THE MODLAPTOP 'DECORATES' THE OBJECT BY EXPANDING ON ITS PROPERTIES AND ADDING FUNCTIONALITY */
 /* Decorator Pattern */
 var ModLaptop = function(curobj){
 	
