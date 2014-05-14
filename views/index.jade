@@ -1,0 +1,24 @@
+extends layout
+
+block content
+  h1= title
+
+  div
+    table
+      thead
+        tr 
+          th ID
+          th Monitor
+          th Hard Drive
+          th Memory
+          th Price
+      tbody
+        each apple, i in apples
+          tr(class=(i % 2 == 0) ? 'odd' : 'even')
+           td= apple._id
+           td= apple.monitor
+           td= apple.harddrive
+           td= apple.memory
+           td $ #{apple.price} 
+
+

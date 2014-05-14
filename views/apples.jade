@@ -1,0 +1,45 @@
+extends layout
+
+block content
+  h1 Welcome to #{title}
+  div
+    a(href='/') Go to Quote Page
+  div
+    h3 Screen Size
+    input#def_screen(onclick='modifyOrder.addDefaultScreen()',type='radio', name='monitor', value='11inch', placeholder='11inch - Included')
+    | 11inch - Included
+    br
+    input#15screen(onclick='modifyOrder.addUpgradeScreen()',type='radio', name='monitor', value='15inch', placeholder='15inch')
+    | 15inch
+    br
+    h3 Hard Drive Size
+    input#def_hd(onclick='modifyOrder.addDefaultHardDrive()',type='radio', name='harddrive', value='128GB', placeholder='128GB - Included')
+    | 128GB - Included
+    br
+    input#256hd(onclick='modifyOrder.addUpgradeDrive()',type='radio', name='harddrive', value='256GB', placeholder='256GB')
+    | 256GB
+    br
+    h3 Memory Size
+    input#def_mem(onclick='modifyOrder.addDefaultMemory()',type='radio', name='memory', value='8GB', placeholder='8GB – Included')
+    | 8GB - Included
+    br
+    input#16mem(onclick='modifyOrder.addUpgradeMemory()',type='radio', name='memory', value='16GB', placeholder='16GB')
+    | 16GB
+    br
+    br
+    h2 Purchase Summary
+    p#screenopt
+    p#harddriveopt
+    p#memoryscreenopt
+    br
+    br
+    h3#total
+    br
+    br
+    button(onclick='modifyOrder.CompletePurchase()') Save Quote
+
+  
+           
+ 
+          
+          
