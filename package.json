@@ -3,7 +3,6 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-<<<<<<< HEAD
     "start": "node app"
   },
   "dependencies": {
@@ -17,16 +16,5 @@
     "passport-local": "~0.1.6",
     "passport-local-mongoose": "~0.2.1",
     "connect-flash": "~0.1.0"
-=======
-    "start": "node app.js"
-  },
-  "dependencies": {
-    "express": "3.4.8",
-    "jade": "*",
-    "stylus": "*"
-  },
-  "devDependencies": {
-    "qunitjs": "^1.14.0"
->>>>>>> bc29d8e658499236e9584f60e35438c54a1e3886
   }
 }
